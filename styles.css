@@ -1,0 +1,129 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-prim: #FF8700;
+    --cor-sec: #FECA00;
+    --cor-ter: #F5EC21;
+    --branco: #FFFFFF;
+    --cinza: #DEDEDE;
+    --preto: #101010;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.introducao {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    line-height: 2rem;
+    max-width: 90%;
+}
+
+.titulo {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+}
+
+span {
+    color: var(--cor-prim);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.descricao {
+    font-size: 1.5rem;
+    padding: 3rem;
+    font-weight: 500;
+    max-width: 50%;
+}
+
+.instrucoes h2 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+    color: var(--cinza);
+}
+
+.instrucoes p {
+    margin-bottom: .5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.jogo-container{
+    max-width: 500px;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.form-jogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-palpite {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    background-color: var(--cinza);
+}
+
+.botao-chutar {
+    border: none;
+    border-radius: 0.25rem;
+    padding: 1rem 3rem;
+    margin-bottom: .5rem;
+    background-color: var(--cor-sec);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: all .4s ease;
+}
+
+.botao-chutar:hover {
+    transform: translateY(-2px);
+    background-color: var(--cor-ter);
+}
+
+.botar-reiniciar {
+    border: none;
+    border-radius: 0.25rem;
+    padding: .5rem 2rem;
+    margin-bottom: .5rem;
+    background-color: var(--cinza);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: all .4s ease;
+}
+
+.tentativas-texto, .tentativas-ant-texto {
+    font-size: 1.1rem;
+    font-weight: 400;   
+}

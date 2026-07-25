@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Número</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="introducao">
+        <h1 class="titulo">Adivinhe o <span>número!</span></h1>
+        <p class="descricao">Bem-vindo! Um número aleatório entre 1 e 100 foi escolhido, será que você consegue adivinha-lo?</p>
+
+        <div class="instrucoes">
+            <h2>Instruções: </h2>
+            <p>Digite o seu palpite e clique no botão abaixo. Você tem <span>10 tentativas</span>, boa sorte.</p>
+        </div>
+    </div>
+
+    <main class="jogo-container">
+        <!-- Formulário onde o jogo acontece, aqui o usuário envia o palpite -->
+        <form id="formJogo" class="form-jogo">
+            <input type="number" class="input-palpite" id="palpite" placeholder="Seu palpite" min="1" max="100" required>
+            <button id="enviar" class="botao-chutar" type="submit">Chutar</button>
+            <button id="reiniciar" class="botar-reiniciar" type="button">Jogar Novamente</button>
+        </form>
+
+
+        <!-- Exibe o número de tentativas -->
+        <p id="tentativas" class="tentativas-texto"></p> 
+        
+        <p id="tentativas-ant" class="tentativas-ant-texto">Tentativas anteriores: </p>
+        
+        <!-- Infomar se o número é maior ou menor que o numero secreto -->
+        <p id="dicas" class="dicas-texto"></p>
+
+        <!-- Mostra o resultado do jogo -->
+        <p id="resultado"></p>
+
+        <!-- Os textos ficarão vazios pois iremos preenche-los usando o Javascript com a propriedade .textcontent -->
+    </main>
+</body>
+</html>
